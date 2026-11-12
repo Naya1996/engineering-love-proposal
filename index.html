@@ -426,23 +426,21 @@ window.loginAdmin = async function() {
   }
 };
 
-onAuthStateChanged(auth || getAuth(initializeApp({
-  apiKey: "demo",
-  authDomain: "demo.firebaseapp.com",
-  projectId: "demo"
-}, "fallback")), user => {
-  if (!adminMode) return;
+if (configured) {
+  onAuthStateChanged(auth, user => {
+    if (!adminMode) return;
 
-  if (user) {
-    document.getElementById("login").style.display = "none";
-    document.getElementById("dashboard").style.display = "block";
-    document.getElementById("adminStatus").innerText =
-      "Login sebagai " + user.email;
-  } else {
-    document.getElementById("login").style.display = "block";
-    document.getElementById("dashboard").style.display = "none";
-  }
-});
+    if (user) {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("dashboard").style.display = "block";
+      document.getElementById("adminStatus").innerText =
+        "Login sebagai " + user.email;
+    } else {
+      document.getElementById("login").style.display = "block";
+      document.getElementById("dashboard").style.display = "none";
+    }
+  });
+}
 
 window.loadAnswers = async function() {
 
