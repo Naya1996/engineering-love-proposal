@@ -1,1 +1,505 @@
 
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engineering Love Proposal | Deriilnay</title>
+
+<style>
+:root {
+  --bg: #071321;
+  --panel: #10243a;
+  --cyan: #48dfff;
+  --white: #f4f8fc;
+  --muted: #a8bacb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  min-height: 100vh;
+  padding: 22px;
+  background-image:
+    linear-gradient(#16304a44 1px, transparent 1px),
+    linear-gradient(90deg,#16304a44 1px,transparent 1px);
+  background-size: 35px 35px;
+}
+
+.container {
+  max-width: 520px;
+  margin: 35px auto;
+  background: var(--panel);
+  border: 1px solid #294964;
+  border-radius: 22px;
+  padding: 28px 22px;
+  box-shadow: 0 15px 50px #0008;
+}
+
+.logo {
+  color: var(--cyan);
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.gear {
+  text-align: center;
+  font-size: 60px;
+  margin: 22px;
+  animation: spin 12s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+h1 span { color: var(--cyan); }
+
+.subtitle {
+  color: var(--muted);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.section {
+  background: #081a2a;
+  border-left: 3px solid var(--cyan);
+  padding: 17px;
+  border-radius: 12px;
+  margin: 22px 0;
+}
+
+.section h3 {
+  color: var(--cyan);
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.section p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 13px;
+}
+
+.question {
+  text-align: center;
+  margin: 25px 0 15px;
+}
+
+.question h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.question p {
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 9px;
+  border: 1px solid #31536e;
+  background: #081a2a;
+  color: white;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 11px;
+  border: none;
+  border-radius: 9px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.yes {
+  background: var(--cyan);
+  color: #071321;
+}
+
+.maybe {
+  background: #29445f;
+  color: white;
+}
+
+.no {
+  background: transparent;
+  border: 1px solid #647b91;
+  color: white;
+}
+
+#message {
+  display: none;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #0a3040;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 28px;
+  font-size: 10px;
+  color: #8197aa;
+  letter-spacing: 2px;
+  line-height: 2;
+}
+
+.admin-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.admin-link a {
+  color: #829db2;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+#admin {
+  display: none;
+}
+
+.answer {
+  background: #081a2a;
+  border: 1px solid #294964;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.status {
+  color: var(--cyan);
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="logo">DERIILNAY ENGINEERING PROJECT</div>
+  <div class="gear">⚙️</div>
+
+  <h1>Engineering <span>Love</span></h1>
+  <p class="subtitle">A Proposal Beyond Engineering</p>
+
+  <div id="proposal">
+
+    <div class="section">
+      <h3>01 — OBSERVATION</h3>
+      <p>
+        Dalam dunia teknik, setiap perencanaan dimulai
+        dengan observasi. Ada satu hal yang ingin
+        aku pelajari lebih jauh, yaitu mengenal dirimu.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>02 — ANALYSIS</h3>
+      <p>
+        Aku tidak ingin membuat kesimpulan berdasarkan
+        asumsi. Perasaan dan hubungan membutuhkan
+        komunikasi serta kejujuran dari kedua pihak.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>03 — PROJECT PLAN</h3>
+      <p>
+        Jika kamu bersedia, aku ingin memulai dari
+        perkenalan yang sederhana, saling menghargai,
+        dan tanpa tekanan.
+      </p>
+    </div>
+
+    <div class="question">
+      <h2>Satu pertanyaan untukmu.</h2>
+      <p>
+        Apakah kamu bersedia memberiku kesempatan
+        untuk mengenalmu lebih dekat?
+      </p>
+    </div>
+
+    <input id="recipient" maxlength="50"
+      placeholder="Namamu (opsional)">
+
+    <button class="yes" onclick="submitAnswer('yes')">
+      ❤️ YA, KITA COBA
+    </button>
+
+    <button class="maybe" onclick="submitAnswer('maybe')">
+      ⏳ AKU BUTUH WAKTU
+    </button>
+
+    <button class="no" onclick="submitAnswer('no')">
+      TIDAK, TERIMA KASIH
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+  <div id="admin">
+    <h2>Admin Dashboard</h2>
+    <p class="subtitle">DERIILNAY PRIVATE ACCESS</p>
+
+    <div id="login">
+      <input id="email" type="email"
+        placeholder="Email admin">
+
+      <input id="password" type="password"
+        placeholder="Password admin">
+
+      <button class="yes" onclick="loginAdmin()">
+        LOGIN ADMIN
+      </button>
+    </div>
+
+    <div id="dashboard" style="display:none">
+      <p id="adminStatus" class="subtitle"></p>
+      <button class="yes" onclick="loadAnswers()">
+        MUAT JAWABAN
+      </button>
+      <div id="answers"></div>
+      <button class="no" onclick="logoutAdmin()">
+        LOGOUT
+      </button>
+    </div>
+  </div>
+
+  <div class="admin-link">
+    <a href="?admin=1">Administrator Access</a>
+  </div>
+
+  <div class="footer">
+    ENGINEERING THE FUTURE<br>
+    RESPECTING EVERY FEELING<br>
+    DEVELOPED BY DERiILNAY
+  </div>
+
+</div>
+
+<script type="module">
+
+import { initializeApp }
+from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  getDocs,
+  query,
+  orderBy,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
+
+// GANTI DENGAN KONFIGURASI FIREBASE MILIKMU
+const firebaseConfig = {
+  apiKey: "ISI_API_KEY",
+  authDomain: "ISI_AUTH_DOMAIN",
+  projectId: "ISI_PROJECT_ID",
+  storageBucket: "ISI_STORAGE_BUCKET",
+  messagingSenderId: "ISI_MESSAGING_SENDER_ID",
+  appId: "ISI_APP_ID"
+};
+
+let app, auth, db;
+
+const configured =
+  firebaseConfig.apiKey !== "ISI_API_KEY";
+
+if (configured) {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  db = getFirestore(app);
+} else {
+  console.warn("Firebase belum dikonfigurasi.");
+}
+
+const adminMode =
+  new URLSearchParams(location.search).get("admin") === "1";
+
+if (adminMode) {
+  document.getElementById("proposal").style.display = "none";
+  document.getElementById("admin").style.display = "block";
+}
+
+window.submitAnswer = async function(choice) {
+
+  if (!configured) {
+    alert("Firebase belum dikonfigurasi.");
+    return;
+  }
+
+  const buttons = document.querySelectorAll(
+    "#proposal button"
+  );
+
+  buttons.forEach(b => b.disabled = true);
+
+  const messages = {
+    yes: "❤️ Terima kasih. Mari kita mulai saling mengenal.",
+    maybe: "⏳ Tidak masalah. Aku menghargai waktumu.",
+    no: "Terima kasih atas kejujuranmu. Aku menghargai keputusanmu."
+  };
+
+  try {
+    await addDoc(collection(db, "jawaban_proposal"), {
+      nama: document.getElementById("recipient").value.trim(),
+      jawaban: choice,
+      waktu: serverTimestamp()
+    });
+
+    const box = document.getElementById("message");
+    box.style.display = "block";
+    box.innerText = messages[choice];
+
+    document.querySelectorAll("#proposal button")
+      .forEach(b => b.style.display = "none");
+
+    document.getElementById("recipient").disabled = true;
+
+  } catch (error) {
+    alert("Jawaban gagal dikirim: " + error.message);
+    buttons.forEach(b => b.disabled = false);
+  }
+};
+
+window.loginAdmin = async function() {
+
+  if (!configured) {
+    alert("Firebase belum dikonfigurasi.");
+    return;
+  }
+
+  try {
+    await signInWithEmailAndPassword(
+      auth,
+      document.getElementById("email").value,
+      document.getElementById("password").value
+    );
+  } catch (error) {
+    alert("Login gagal: " + error.message);
+  }
+};
+
+onAuthStateChanged(auth || getAuth(initializeApp({
+  apiKey: "demo",
+  authDomain: "demo.firebaseapp.com",
+  projectId: "demo"
+}, "fallback")), user => {
+  if (!adminMode) return;
+
+  if (user) {
+    document.getElementById("login").style.display = "none";
+    document.getElementById("dashboard").style.display = "block";
+    document.getElementById("adminStatus").innerText =
+      "Login sebagai " + user.email;
+  } else {
+    document.getElementById("login").style.display = "block";
+    document.getElementById("dashboard").style.display = "none";
+  }
+});
+
+window.loadAnswers = async function() {
+
+  if (!auth?.currentUser) return;
+
+  try {
+    const q = query(
+      collection(db, "jawaban_proposal"),
+      orderBy("waktu", "desc")
+    );
+
+    const snapshot = await getDocs(q);
+    const output = document.getElementById("answers");
+
+    output.innerHTML = "";
+
+    if (snapshot.empty) {
+      output.innerText = "Belum ada jawaban.";
+      return;
+    }
+
+    snapshot.forEach(doc => {
+      const data = doc.data();
+
+      const card = document.createElement("div");
+      card.className = "answer";
+
+      const name = document.createElement("b");
+      name.textContent = data.nama || "Anonim";
+
+      const answer = document.createElement("p");
+      answer.className = "status";
+      answer.textContent = {
+        yes: "❤️ Ya, kita coba",
+        maybe: "⏳ Butuh waktu",
+        no: "Tidak, terima kasih"
+      }[data.jawaban] || "Tidak diketahui";
+
+      const date = document.createElement("p");
+      date.textContent = data.waktu
+        ? data.waktu.toDate().toLocaleString("id-ID")
+        : "Waktu belum tersedia";
+
+      card.append(name, answer, date);
+      output.appendChild(card);
+    });
+
+  } catch (error) {
+    alert("Gagal membaca data: " + error.message);
+  }
+};
+
+window.logoutAdmin = async function() {
+  await signOut(auth);
+};
+
+</script>
+
+</body>
+</html>
+
